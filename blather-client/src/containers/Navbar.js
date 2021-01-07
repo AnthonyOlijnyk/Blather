@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {connect} from 'react-redux';
-import Logo from '../images/warbler-logo.png';
+import Logo from '../images/blather-logo.png';
 import {logout} from '../store/actions/auth';
 
 class Navbar extends Component{
@@ -15,11 +15,11 @@ class Navbar extends Component{
                 <div className="container-fluid">
                     <div>
                         <Link to="/" className="navbar-brand">
-                            <img src={Logo} alt="Warbler Home" />
+                            <img src={Logo} alt="Blather Home" />
                         </Link>
                     </div>
                     {this.props.currentUser.isAuthenticated ? (
-                        <ul className="nav-navbar-nav navbar-right">
+                        <ul className="nav navbar-nav navbar-right">
                             <li>
                                 <Link to={`/users/${this.props.currentUser.user.id}/messages/new`}>
                                     New Message

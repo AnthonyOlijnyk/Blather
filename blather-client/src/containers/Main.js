@@ -35,7 +35,7 @@ const Main = (props) => {
                             onAuth={authUser}
                             signUp
                             buttonText="Sign me up!" 
-                            heading="Join Warbler Today." 
+                            heading="Join Blather Today." 
                             {...props}
                         />
                     )
